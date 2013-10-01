@@ -1,6 +1,6 @@
 ﻿namespace ResistForms
 {
-    partial class Form1
+    partial class Resist
     {
         /// <summary>
         /// Required designer variable.

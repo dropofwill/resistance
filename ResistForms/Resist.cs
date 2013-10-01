@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ResistForms
 {
-    public partial class Form1 : Form
+    public partial class Resist : Form
     {
-        public Form1()
+        public Resist()
         {
             InitializeComponent();
         }

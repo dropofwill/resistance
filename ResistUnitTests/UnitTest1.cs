@@ -12,8 +12,10 @@ namespace ResistUnitTests
         public void SpySelection()
         {
             var game = new Game();
-            Debug.WriteLine("yolo");
+            game.chooseRoles();
+            
             //Assert.IsInstanceOfType(game.ResistIndex, typeof(List<int>));
+            Assert.AreEqual(3, game.ResistIndex.Count);
         }
     }
 }
