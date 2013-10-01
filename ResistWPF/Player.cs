@@ -8,5 +8,9 @@ namespace ResistWPF
 {
     class Player
     {
+        public Player(bool isSpy)
+        {
+
+        }
     }
 }

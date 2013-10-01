@@ -3,3 +3,5 @@ C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistUnitTests\bin\Debug\Res
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistUnitTests\obj\Debug\ResistUnitTests.csprojResolveAssemblyReference.cache
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistUnitTests\obj\Debug\ResistUnitTests.dll
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistUnitTests\obj\Debug\ResistUnitTests.pdb
+C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistUnitTests\bin\Debug\ResistWPF.exe
+C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistUnitTests\bin\Debug\ResistWPF.pdb
