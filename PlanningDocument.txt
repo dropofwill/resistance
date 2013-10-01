@@ -1,0 +1,51 @@
+﻿*Guide: 
+() feature to be implemented 
+> inherited/child class
+__ composite class
+-- properties/fields/methods
+
+Stucture of WPF: Model - View - ViewModel - Tests
+
+Class Structure - Model: 
+Game
+ |__Initialization
+ |  |   // Create the appropriate amount of players
+ |  |   // Establish turn order and first leader
+ |  |__Players 
+ |
+ |__Turn
+ |  |__(PlotCardPhase) // Leader reveals and plays plot cards
+ |  |__SelectionPhase  // Leader selects the appropriate number of players to go on a mission
+ |	|__VotingPhase     // Everyone approves or rejects the leaders team
+ |	|__MissionPhase    // If approved the players on the team either play a success
+ |
+ |__GameState
+
+Player
+ |-- Name - String
+ |
+ |__Record
+ |  |__SelectionRecord   // accessible to other players
+ |  |__VotingRecord      // accessible to other players
+ |  |__MissionRecord     // accesible only to itself and parents, not other players
+ |
+ |> HumanPlayer : Player
+ |> (AIPlayer : Player)
+
+
+ View Gameplay description
+
+ Start screen 
+	|__Settings Screen
+	|__Stats Screen
+	|__Gameplay:
+	   Pass laptop around, player enters their name and is shown their player type.
+	   First player is the leader, the order it is passed is the turn order for who gets the leader next
+
+	   (Plot cards)
+
+	   Leader gets laptop (sees who the other spies are if he is a spy) and chooses a team.
+
+	   Everyone places a vote on the team by selecting themselves from the list and voting.
+	   Once everyone has voted, the votes are revealed and the mission either passes (next step) or 
+	   doesn't and leadership is passed to the next player

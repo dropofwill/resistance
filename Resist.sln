@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CB8D6FC7-BB74-45DD-874D-D6E5775FCD92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResistUnitTests", "ResistUnitTests\ResistUnitTests.csproj", "{01C11CFA-1258-46F2-AE39-9D8BB9280A5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{95EA4543-745D-405C-8145-8D6677A37E52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{CCC57EEA-80FA-4F4F-A597-177BF20571CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResistWPF", "ResistWPF\ResistWPF.csproj", "{0E06DB78-F553-41B3-9FD7-30E821B6385E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResistForms", "ResistForms\ResistForms.csproj", "{68BF64BD-77F2-4FA6-8CE3-546C612DC754}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{23D8EDF3-28C6-40F3-B821-EAEE7D7617A9}"
+	ProjectSection(SolutionItems) = preProject
+		PlanningDocument.txt = PlanningDocument.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01C11CFA-1258-46F2-AE39-9D8BB9280A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C11CFA-1258-46F2-AE39-9D8BB9280A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C11CFA-1258-46F2-AE39-9D8BB9280A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C11CFA-1258-46F2-AE39-9D8BB9280A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E06DB78-F553-41B3-9FD7-30E821B6385E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E06DB78-F553-41B3-9FD7-30E821B6385E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E06DB78-F553-41B3-9FD7-30E821B6385E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E06DB78-F553-41B3-9FD7-30E821B6385E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68BF64BD-77F2-4FA6-8CE3-546C612DC754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BF64BD-77F2-4FA6-8CE3-546C612DC754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BF64BD-77F2-4FA6-8CE3-546C612DC754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BF64BD-77F2-4FA6-8CE3-546C612DC754}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{01C11CFA-1258-46F2-AE39-9D8BB9280A5D} = {CB8D6FC7-BB74-45DD-874D-D6E5775FCD92}
+		{0E06DB78-F553-41B3-9FD7-30E821B6385E} = {95EA4543-745D-405C-8145-8D6677A37E52}
+		{68BF64BD-77F2-4FA6-8CE3-546C612DC754} = {CCC57EEA-80FA-4F4F-A597-177BF20571CE}
+	EndGlobalSection
+EndGlobal
