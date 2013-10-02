@@ -26,7 +26,7 @@ namespace ResistWPF
         {
             numPlayers = n;
             chooseRoles();
-            //creatPlayers();
+            creatPlayers();
             //aGameState = new GameState();
         }
 
