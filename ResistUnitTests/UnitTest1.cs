@@ -14,8 +14,8 @@ namespace ResistUnitTests
             var game = new Game();
             game.chooseRoles();
             
-            //Assert.IsInstanceOfType(game.ResistIndex, typeof(List<int>));
             Assert.AreEqual(3, game.ResistIndex.Count);
+            Console.Write(game.ResistIndex);
         }
     }
 }

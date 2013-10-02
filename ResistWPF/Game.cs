@@ -13,8 +13,9 @@ namespace ResistWPF
         private int numSpies = 2;
         private int numPlayers = 5;
         private List<int> resistIndex;
-        private int[] FIVE_PLAYER_RULES = {2,3,2,3,3};
-        
+        private List<Player> playerList;
+        private int[] FIVE_PLAYER_RULES = {2,3,2,3,3}; // Number of players on the mission based on turn
+        private GameState aGameState;
 
         public Game(int n = 5)
         {
@@ -25,42 +26,55 @@ namespace ResistWPF
         {
             numPlayers = n;
             chooseRoles();
+            creatPlayers();
+            //aGameState = new GameState();
         }
 
+        private void creatPlayers()
+        {
+            for (var i = 0; i < numPlayers; i++)
+            {
+                var isSpy = new Boolean();
+                //if (i 
+            }
+        }
+
+        private Player addPlayer(bool isSpy, string name)
+        {
+            var aPlayer = new Player(isSpy, name);
+            return aPlayer;
+        }
 
         public void chooseRoles()
         {
-            resistIndex = populateIndex(numPlayers);
-            resistIndex = selectResistIndex(resistIndex);
+            resistIndex = populateIndex();
+            resistIndex = selectResistIndex();
         }
 
-        private List<int> populateIndex(int numPlayers)
+        private List<int> populateIndex()
         {
             var playersIndex = new List<int>();
 
-            // Make a list of the index of players
+            // Make a linked list of the index of players
             for (var i = 0; i < numPlayers; i++)
             {
                 playersIndex.Add(i);
             }
-
             return playersIndex;
         }
 
-        private List<int> selectResistIndex(List<int> resistIndex)
+        private List<int> selectResistIndex()
         {
             var random = new Random();
             var playersIndex = resistIndex;
             var index = new int();
 
-            while (playersIndex.Count > playersIndex.Count - numSpies)
+            while (playersIndex.Count > numPlayers - numSpies)
             {
                 index = random.Next(0, playersIndex.Count-1);
-                playersIndex.RemoveAt(index);
-
-                Console.WriteLine(index);
+                playersIndex[index] = -1;
+                //playersIndex.Remove(index);
             }
-
             return playersIndex;
         }
 
@@ -72,39 +86,11 @@ namespace ResistWPF
             }
         }
 
-
-        class GameState
+        public GameState AGameState
         {
-            private int turn;
-            private int attempts;
-            private int wins;
-            private int losses;
-            private Player leader;
-            private List<Player> players;
-
-            public List<Player> Players
-            {
-                get { return players; }
-                set { players = value; }
-            }
-
-            /// <summary>
-            /// A summary of the game state viewable to all players
-            /// </summary>
-            /// <param name="players">A list of player objects in turn order with the first leader first</param>
-            public GameState(List<Player> ps)
-            {
-                turn = 0;       // (0..4) keeps track of completed missions
-                attempts = 0;   // (0..4) keeps track of the number of attempts to send a team, resets after team approval
-                wins = 0;       // Resistance wins, 3 for Resistance victory
-                losses = 0;     // Resistance losses, 3 for Spy victory
-
-                players = ps;           // List of players
-                leader = players[0];    // First player is the leader
-            }
+            get { return aGameState; }
+            set { aGameState = value; }
         }
-
-         
 
         public int NumPlayers
         {

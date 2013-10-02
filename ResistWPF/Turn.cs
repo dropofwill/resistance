@@ -10,7 +10,7 @@ namespace ResistWPF
     {
         public Turn(int numOnMission)
         {
-
+            
         }
     }
 }

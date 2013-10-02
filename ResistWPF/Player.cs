@@ -12,5 +12,10 @@ namespace ResistWPF
         {
 
         }
+
+        public Player(bool isSpy, string name)
+        {
+
+        }
     }
 }
