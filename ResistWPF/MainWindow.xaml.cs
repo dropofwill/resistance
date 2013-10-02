@@ -24,13 +24,6 @@ namespace ResistWPF
         {
             InitializeComponent();
             var testGame = new Game();
-
-            //testGame.ResistIndex = testGame.SelectResistIndex;
-
-         //   for (var i = 0; i < testGame.ResistIndex.Count; i++)
-         //   {
-         //       System.Diagnostics.Debug.WriteLine(testGame.ResistIndex[i]);
-         //   }
         }
     }
 }

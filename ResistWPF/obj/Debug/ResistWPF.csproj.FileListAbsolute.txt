@@ -1,15 +1,13 @@
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\bin\Debug\ResistWPF.exe.config
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\bin\Debug\ResistWPF.exe
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\bin\Debug\ResistWPF.pdb
-C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF.csprojResolveAssemblyReference.cache
-C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\MainWindow.baml
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\MainWindow.g.cs
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\App.g.cs
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF_MarkupCompile.cache
+C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF_MarkupCompile.lref
+C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\MainWindow.baml
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF.g.resources
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF.Properties.Resources.resources
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF.csproj.GenerateResource.Cache
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF.exe
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF.pdb
-C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF_MarkupCompile.lref

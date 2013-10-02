@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ResistWPF
 {
-    class Player
+    public class Player
     {
         public Player(bool isSpy)
         {

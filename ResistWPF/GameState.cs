@@ -13,7 +13,7 @@ namespace ResistWPF
         private int wins;
         private int losses;
         private Player leader;
-        private List<Player> players;
+        public List<Player> players;
 
         /// <summary>
         /// A summary of the game state viewable to all players
@@ -49,16 +49,6 @@ namespace ResistWPF
         {
             get { return losses; }
             set { losses = value; }
-        }
-        public List<Player> Players
-        {
-            get { return players; }
-            set { players = value; }
-        }
-        internal Player Leader
-        {
-            get { return leader; }
-            set { leader = value; }
         }
     }
 }
