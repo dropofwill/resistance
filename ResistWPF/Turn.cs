@@ -9,10 +9,14 @@ namespace ResistWPF
     class Turn
     {
         private int numOnMission;
+        private GameState myGameState;
 
-        public Turn(int nM)
+        public Turn(int nM, ref GameState aGS)
         {
             numOnMission = nM;
+            myGameState = aGS;
+
+            myGameState.Turn++;
         }
     }
 }

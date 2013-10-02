@@ -32,6 +32,9 @@ Player
  |> HumanPlayer : Player
  |> (AIPlayer : Player)
 
+ PlayerDB
+  id | Name | PicRef | Wins | Losses | Spy | Resistance
+
 
  View Gameplay description
 

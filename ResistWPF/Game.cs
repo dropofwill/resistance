@@ -25,9 +25,13 @@ namespace ResistWPF
         private void Create(int n)
         {
             numPlayers = n;
+
             chooseRoles();
             createPlayers();
+            
             aGameState = new GameState(playerList);
+            
+            GameLoop();
         }
 
         private void createPlayers()
@@ -94,7 +98,7 @@ namespace ResistWPF
         {
             for (var i = 0; i < 5; i++)
             {
-                var turn = new Turn(FIVE_PLAYER_RULES[i]);
+                var turn = new Turn(FIVE_PLAYER_RULES[i], ref aGameState);
             }
         }
 
