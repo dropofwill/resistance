@@ -14,7 +14,7 @@ namespace ResistWPF
         private int numPlayers = 5;
         private List<int> resistIndex;
         private List<Player> playerList = new List<Player>();
-        private int[] FIVE_PLAYER_RULES = {2,3,2,3,3}; // Number of players on the mission based on turn
+        private int[] FIVE_PLAYER_RULES = {2,3,2,3,3};         // Number of players on the mission based on turn
         private GameState aGameState;
 
         public Game(int n = 5)
@@ -26,11 +26,11 @@ namespace ResistWPF
         {
             numPlayers = n;
             chooseRoles();
-            creatPlayers();
-            //aGameState = new GameState();
+            createPlayers();
+            aGameState = new GameState(playerList);
         }
 
-        private void creatPlayers()
+        private void createPlayers()
         {
             for (var i = 0; i < numPlayers; i++)
             {
@@ -44,10 +44,8 @@ namespace ResistWPF
                 {
                     isSpy = false;
                 }
-
                 var aPlayer = new Player(isSpy);
                 playerList.Add(aPlayer);
-                Trace.WriteLine(isSpy);
             }
         }
 
@@ -81,9 +79,12 @@ namespace ResistWPF
             var playersIndex = resistIndex;
             var index = new int();
 
-            while (playersIndex.Count > numPlayers - numSpies)
+            for (var i = 1; i < numPlayers - numSpies; i++)
             {
-                index = random.Next(0, playersIndex.Count-1);
+                do {
+                    index = random.Next(0, playersIndex.Count - 1);
+                } while (playersIndex[index] == -1);
+
                 playersIndex[index] = -1;
             }
             return playersIndex;

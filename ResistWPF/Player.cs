@@ -8,14 +8,18 @@ namespace ResistWPF
 {
     public class Player
     {
-        public Player(bool isSpy)
-        {
+        private bool isSpy;
+        private string playerName;
 
+        public Player(bool spy)
+        {
+            isSpy = spy;
         }
 
-        public Player(bool isSpy, string name)
+        public Player(bool spy, string n)
         {
-
+            isSpy = spy;
+            playerName = n;
         }
     }
 }

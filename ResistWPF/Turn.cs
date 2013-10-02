@@ -8,9 +8,11 @@ namespace ResistWPF
 {
     class Turn
     {
-        public Turn(int numOnMission)
+        private int numOnMission;
+
+        public Turn(int nM)
         {
-            
+            numOnMission = nM;
         }
     }
 }
