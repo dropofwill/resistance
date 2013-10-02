@@ -23,7 +23,7 @@ namespace ResistWPF
         public MainWindow()
         {
             InitializeComponent();
-            var testGame = new Game();
+            //var testGame = new Game();
         }
     }
 }

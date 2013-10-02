@@ -98,7 +98,7 @@ namespace ResistWPF
         {
             for (var i = 0; i < 5; i++)
             {
-                var turn = new Turn(FIVE_PLAYER_RULES[i], ref aGameState);
+                var turn = new Turn(FIVE_PLAYER_RULES[i], ref aGameState, ref playerList);
             }
         }
 

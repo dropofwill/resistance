@@ -12,7 +12,9 @@ namespace ResistWPF
         private int attempts;
         private int wins;
         private int losses;
-        private Player leader;
+        //private Player leader;
+        private int leaderIndex;
+
         public List<Player> players;
 
         /// <summary>
@@ -27,7 +29,8 @@ namespace ResistWPF
             losses = 0;     // Resistance losses, 3 for Spy victory
 
             players = ps;           // List of players
-            leader = players[0];    // First player is the leader
+            // leader = players[0];    // First player is the leader
+            leaderIndex = 0;
         }
 
         public int Turn
@@ -49,6 +52,11 @@ namespace ResistWPF
         {
             get { return losses; }
             set { losses = value; }
+        }
+        public int LeaderIndex
+        {
+            get { return leaderIndex; }
+            set { leaderIndex = value; }
         }
     }
 }
