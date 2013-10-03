@@ -4,7 +4,7 @@
         xmlns:local="clr-namespace:ResistWPF" x:Name="MainWindow1" x:Class="ResistWPF.MainWindow"
         Title="Resistance Pass-and-Play Game" Height="768" Width="1024" Background="White">
     
-    <DockPanel Height="730" LastChildFill="False" Width="1004">
+    <DockPanel Height="730" Width="1004">
         <ContentControl x:Name="ContentArea" />
     </DockPanel>
 </Window>
