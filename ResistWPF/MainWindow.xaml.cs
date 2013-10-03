@@ -24,6 +24,8 @@ namespace ResistWPF
         {
             InitializeComponent();
             //var testGame = new Game();
+            ContentArea.Content = new MainMenuView();
         }
+
     }
 }

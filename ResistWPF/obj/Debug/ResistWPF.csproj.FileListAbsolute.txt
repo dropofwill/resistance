@@ -12,3 +12,5 @@ C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF.csproj.GenerateResource.Cache
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF.exe
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\ResistWPF.pdb
+C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\Views\MainMenuView.baml
+C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\Views\MainMenuView.g.cs

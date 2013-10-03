@@ -15,13 +15,11 @@ namespace ResistWPF
         {
             isSpy = spy;
         }
-
         public Player(bool spy, string n)
         {
             isSpy = spy;
             playerName = n;
         }
-
         public string PlayerName
         {
             get { return playerName; }
