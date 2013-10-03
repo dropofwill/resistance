@@ -35,7 +35,12 @@ namespace ResistWPF.Views
 
         private void StartGame_btn_Click(object sender, RoutedEventArgs e)
         {
-            viewController.SetView(viewController.Game);
+            viewController.GameSelect((Button)sender);
+        }
+
+        private void CtnGame_btn_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.GameSelect((Button)sender);
         }
 
         private void Scoreboard_btn_Click(object sender, RoutedEventArgs e)

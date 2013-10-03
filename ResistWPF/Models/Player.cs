@@ -20,6 +20,8 @@ namespace ResistWPF
             isSpy = spy;
             playerName = n;
         }
+
+
         public string PlayerName
         {
             get { return playerName; }

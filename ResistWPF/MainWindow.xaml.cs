@@ -35,6 +35,9 @@ namespace ResistWPF
         }
     }
 
+    /// <summary>
+    /// Controller for navigation between views
+    /// </summary>
     public class ViewControl
     {
         private MainWindow _main;
@@ -51,6 +54,18 @@ namespace ResistWPF
         public void SetView(UserControl aView)
         {
             _main.ContentArea.Content = aView;
+        }
+
+        public void GameSelect(Button sender)
+        {
+            if (sender.Name == "StartGame_btn")
+            {
+                this.SetView(NewGame);
+            }
+            else if (sender.Name == "CtnGame_btn")
+            {
+                this.SetView(Game);
+            }
         }
 
         public UserControl Menu
@@ -73,16 +88,34 @@ namespace ResistWPF
             }
         }
 
+        public UserControl NewGame
+        {
+            get
+            {
+                _game = new Views.GameView(this);
+
+                if (_menu.CtnGame_btn.IsEnabled == false)
+                    _menu.CtnGame_btn.IsEnabled = true;
+
+                return _game;
+            }
+        }
+
         public UserControl Game
         {
             get
             {
                 if (_game == null)
+                {
                     _game = new Views.GameView(this);
+
+                    if (_menu.CtnGame_btn.IsEnabled == false)
+                        _menu.CtnGame_btn.IsEnabled = true;
+                }
                 return _game;
             }
         }
-
+        
         public UserControl Score
         {
             get

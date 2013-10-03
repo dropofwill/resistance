@@ -26,12 +26,12 @@ namespace ResistWPF
         {
             numPlayers = n;
 
-            chooseRoles();
-            createPlayers();
+            //chooseRoles();
+            //createPlayers();
             
-            aGameState = new GameState(playerList);
+            //aGameState = new GameState(playerList);
             
-            GameLoop();
+            //GameLoop();
         }
 
         private void createPlayers()

@@ -20,3 +20,5 @@ C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\Views\Sco
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\Views\GameView.g.cs
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\Views\HelpView.g.cs
 C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\Views\ScoreboardView.g.cs
+C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\Views\CreatePlayerView.baml
+C:\Users\wpnev_000\Dropbox\RIT\1 Algorithms\Resist\ResistWPF\obj\Debug\Views\CreatePlayerView.g.cs
