@@ -34,6 +34,16 @@ namespace ResistWPF
             //GameLoop();
         }
 
+        public Player createAPlayer(string name, int resIndex)
+        {
+            var isSpy = isPlayerSpy(resIndex);
+
+            var player = new Player(isSpy,name);
+            playerList.Add(player);
+
+            return player;
+        }
+
         private void createPlayers()
         {
             for (var i = 0; i < numPlayers; i++)
@@ -53,6 +63,22 @@ namespace ResistWPF
             }
         }
 
+        private bool isPlayerSpy(int resIndex)
+        {
+            var isSpy = new Boolean();
+
+            if (resistIndex[resIndex] == -1)
+            {
+                isSpy = true;
+            }
+            else
+            {
+                isSpy = false;
+            }
+
+            return isSpy;
+        }
+
         private Player addPlayer(bool isSpy, string name)
         {
             var aPlayer = new Player(isSpy, name);
@@ -61,7 +87,10 @@ namespace ResistWPF
 
         public void chooseRoles()
         {
+            //Fill list of ints with the appropriate amount according to number of players
             resistIndex = populateIndex();
+
+            //Randomly choose the appropriate number of players to be spies by setting their number to -1
             resistIndex = selectResistIndex();
         }
 

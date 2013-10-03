@@ -21,6 +21,7 @@ namespace ResistWPF.Views
     public partial class GameView : UserControl
     {
         private ViewControl viewController;
+        private Controllers.GameController myGameController;
         private Game aGame;
 
         public GameView(ViewControl vC)
@@ -28,6 +29,8 @@ namespace ResistWPF.Views
             viewController = vC;
             InitializeComponent();
             aGame = new Game();
+
+            myGameController = new Controllers.GameController(this, aGame);
         }
 
         private void Back_btn_game_Click(object sender, RoutedEventArgs e)

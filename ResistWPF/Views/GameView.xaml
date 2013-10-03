@@ -14,5 +14,10 @@
         
         <Label x:Name="Resistance_Game" Content="Resistance &gt; Game" HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Light" Width="320"/>
         <Button x:Name="Back_btn" Content="&lt;" HorizontalAlignment="Left" Click="Back_btn_game_Click" Height="44" Margin="24,19,0,0" VerticalAlignment="Top" Width="45" Background="{x:Null}" BorderThickness="0" FontSize="36" FontFamily="MS UI Gothic"/>
+        
+        <DockPanel Grid.Row="1">
+            <ContentControl x:Name="GameArea"></ContentControl>
+        </DockPanel>
+
     </Grid>
 </UserControl>
