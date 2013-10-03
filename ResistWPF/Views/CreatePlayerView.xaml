@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="ResistWPF.Views.CreatePlayerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Label x:Name="PlayerNum_label" Content="Player 1" Grid.Column="1" MaxWidth="200" MaxHeight="40" VerticalAlignment="Top" Margin="0,264,0,0"/>
+        <TextBox x:Name="PlayerName_txt" Text="Player Name" Grid.Column="1" MaxWidth="200" Height="20" AllowDrop="True"/>
+        <Button x:Name="CreatePlayer_btn" Content="Create Player" Grid.Column="1" HorizontalAlignment="Left" Margin="246,375,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="-0.526,-0.4"/>
+    </Grid>
+</UserControl>
