@@ -40,6 +40,8 @@ namespace ResistWPF
         private MainWindow _main;
         private Views.MainMenuView _menu;
         private Views.HelpView _help;
+        private Views.GameView _game;
+        private Views.ScoreboardView _score;
 
         public ViewControl(MainWindow mW)
         {
@@ -68,6 +70,26 @@ namespace ResistWPF
                 if (_help == null)
                     _help = new Views.HelpView(this);
                 return _help;
+            }
+        }
+
+        public UserControl Game
+        {
+            get
+            {
+                if (_game == null)
+                    _game = new Views.GameView(this);
+                return _game;
+            }
+        }
+
+        public UserControl Score
+        {
+            get
+            {
+                if (_score == null)
+                    _score = new Views.ScoreboardView(this);
+                return _score;
             }
         }
     }

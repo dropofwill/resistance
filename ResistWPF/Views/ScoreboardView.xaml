@@ -4,8 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="768" d:DesignWidth="1024">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="Resistance_Scoreboard" Content="Resistance &gt; Scoreboard" HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Light" Width="399"/>
+        <Button x:Name="Back_btn" Content="&lt;" HorizontalAlignment="Left" Height="44" Margin="24,19,0,0" VerticalAlignment="Top" Width="45" Background="{x:Null}" BorderThickness="0" FontSize="36" FontFamily="MS UI Gothic" Click="Back_btn_scoreboard_Click" />
     </Grid>
 </UserControl>

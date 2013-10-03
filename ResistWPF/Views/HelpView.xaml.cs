@@ -28,7 +28,7 @@ namespace ResistWPF.Views
             InitializeComponent();
         }
 
-        private void Back_btn_Click(object sender, RoutedEventArgs e)
+        private void Back_btn_help_Click(object sender, RoutedEventArgs e)
         {
             viewController.SetView(viewController.Menu);
         }

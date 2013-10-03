@@ -20,9 +20,17 @@ namespace ResistWPF.Views
     /// </summary>
     public partial class ScoreboardView : UserControl
     {
-        public ScoreboardView()
+        private ViewControl viewController;
+
+        public ScoreboardView(ViewControl vC)
         {
+            viewController = vC;
             InitializeComponent();
+        }
+
+        private void Back_btn_scoreboard_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.SetView(viewController.Menu);
         }
     }
 }

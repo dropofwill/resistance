@@ -20,9 +20,17 @@ namespace ResistWPF.Views
     /// </summary>
     public partial class GameView : UserControl
     {
-        public GameView()
+        private ViewControl viewController;
+
+        public GameView(ViewControl vC)
         {
+            viewController = vC;
             InitializeComponent();
+        }
+
+        private void Back_btn_game_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.SetView(viewController.Menu);
         }
     }
 }
