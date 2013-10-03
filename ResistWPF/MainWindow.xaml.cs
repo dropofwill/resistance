@@ -25,7 +25,7 @@ namespace ResistWPF
         public MainWindow()
         {
             InitializeComponent();
-            viewCtr = new ViewControl();
+            viewCtr = new ViewControl(this);
             this.SetView(viewCtr.Menu);
         }
 
@@ -37,15 +37,26 @@ namespace ResistWPF
 
     public class ViewControl
     {
+        private MainWindow _main;
         private Views.MainMenuView _menu;
         private Views.HelpView _help;
+
+        public ViewControl(MainWindow mW)
+        {
+            _main = mW;
+        }
+
+        public void SetView(UserControl aView)
+        {
+            _main.ContentArea.Content = aView;
+        }
 
         public UserControl Menu
         {
             get
             {
                 if (_menu == null)
-                    _menu = new Views.MainMenuView();
+                    _menu = new Views.MainMenuView(this);
                 return _menu;
             }
         }
@@ -55,7 +66,7 @@ namespace ResistWPF
             get
             {
                 if (_help == null)
-                    _help = new Views.HelpView();
+                    _help = new Views.HelpView(this);
                 return _help;
             }
         }

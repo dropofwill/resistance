@@ -20,9 +20,17 @@ namespace ResistWPF.Views
     /// </summary>
     public partial class HelpView : UserControl
     {
-        public HelpView()
+        private ViewControl viewController;
+
+        public HelpView(ViewControl vC)
         {
+            viewController = vC;
             InitializeComponent();
+        }
+
+        private void Back_btn_Click(object sender, RoutedEventArgs e)
+        {
+            viewController.SetView(viewController.Menu);
         }
     }
 }

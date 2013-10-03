@@ -22,7 +22,7 @@
             <Button x:Name="StartGame_btn" Content="Start a New Game" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Top" Width="208" Background="White" FontSize="22" BorderThickness="0"  Cursor="Hand" FontFamily="Segoe UI Semilight" Margin="152,0"/>
             <Button x:Name="CtnGame_btn" Content="Continue Game" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Top" Width="208" Background="White" FontSize="22" BorderThickness="0"  Cursor="Hand" FontFamily="Segoe UI Semilight" IsEnabled="False"/>
             <Button x:Name="Scoreboard_btn" Content="Scoreboard" HorizontalAlignment="Center" Height="50" Width="209" Background="White" FontSize="22" BorderThickness="0" Cursor="Hand" VerticalAlignment="Top" FontFamily="Segoe UI Semilight"/>
-            <Button x:Name="HowTo_btn" Content="Learn How to Play" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Bottom" Width="210" Background="White" FontSize="22" BorderThickness="0" Cursor="Hand" VerticalContentAlignment="Center" FontFamily="Segoe UI Semilight"/>
+            <Button x:Name="HowTo_btn" Content="Learn How to Play" Click="" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Bottom" Width="210" Background="White" FontSize="22" BorderThickness="0" Cursor="Hand" VerticalContentAlignment="Center" FontFamily="Segoe UI Semilight"/>
         </StackPanel>
     </Grid>
 </UserControl>

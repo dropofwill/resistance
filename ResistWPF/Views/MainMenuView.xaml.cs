@@ -20,8 +20,11 @@ namespace ResistWPF.Views
     /// </summary>
     public partial class MainMenuView : UserControl
     {
-        public MainMenuView()
+        private ViewControl viewController;
+
+        public MainMenuView(ViewControl vC)
         {
+            viewController = vC;
             InitializeComponent();
         }
 
