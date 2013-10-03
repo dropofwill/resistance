@@ -20,12 +20,44 @@ namespace ResistWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ViewControl viewCtr;
+
         public MainWindow()
         {
             InitializeComponent();
-            //var testGame = new Game();
-            ContentArea.Content = new MainMenuView();
+            viewCtr = new ViewControl();
+            this.SetView(viewCtr.Menu);
         }
 
+        public void SetView(UserControl aView)
+        {
+            ContentArea.Content = aView;
+        }
+    }
+
+    public class ViewControl
+    {
+        private Views.MainMenuView _menu;
+        private Views.HelpView _help;
+
+        public UserControl Menu
+        {
+            get
+            {
+                if (_menu == null)
+                    _menu = new Views.MainMenuView();
+                return _menu;
+            }
+        }
+
+        public UserControl Help
+        {
+            get
+            {
+                if (_help == null)
+                    _help = new Views.HelpView();
+                return _help;
+            }
+        }
     }
 }

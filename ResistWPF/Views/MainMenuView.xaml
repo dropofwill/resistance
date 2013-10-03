@@ -1,4 +1,4 @@
-﻿<UserControl x:Name="MainMenu" x:Class="ResistWPF.MainMenuView"
+﻿<UserControl x:Name="MainMenu" x:Class="ResistWPF.Views.MainMenuView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,14 +7,18 @@
              d:DesignHeight="768" d:DesignWidth="1024">
     
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="Resistance_Game" Content="Resistance" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Light"/>
+        <Label x:Name="Resistance_Game" Content="Resistance" HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Light"/>
 
-        <StackPanel VerticalAlignment="Center" Grid.Column="1">
+        <StackPanel VerticalAlignment="Center" Grid.Column="1" Grid.Row="1">
             <Button x:Name="StartGame_btn" Content="Start a New Game" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Top" Width="208" Background="White" FontSize="22" BorderThickness="0"  Cursor="Hand" FontFamily="Segoe UI Semilight" Margin="152,0"/>
             <Button x:Name="CtnGame_btn" Content="Continue Game" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Top" Width="208" Background="White" FontSize="22" BorderThickness="0"  Cursor="Hand" FontFamily="Segoe UI Semilight" IsEnabled="False"/>
             <Button x:Name="Scoreboard_btn" Content="Scoreboard" HorizontalAlignment="Center" Height="50" Width="209" Background="White" FontSize="22" BorderThickness="0" Cursor="Hand" VerticalAlignment="Top" FontFamily="Segoe UI Semilight"/>

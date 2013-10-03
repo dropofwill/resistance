@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace ResistWPF.Views
 {
     /// <summary>
-    /// Interaction logic for MainMenuView.xaml
+    /// Interaction logic for GameView.xaml
     /// </summary>
-    public partial class MainMenuView : UserControl
+    public partial class GameView : UserControl
     {
-        public MainMenuView()
+        public GameView()
         {
             InitializeComponent();
         }
-
     }
 }
